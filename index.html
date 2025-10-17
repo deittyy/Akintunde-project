@@ -1,206 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Developer Profile Card</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <article class="profile-card" data-testid="test-profile-card">
-        <div class="profile-content">
-            <!-- Profile Header with Avatar and Personal Info -->
-            <header class="profile-header" aria-label="Developer profile header">
-                <figure class="avatar-container">
-                    <img 
-                        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" 
-                        alt="Professional headshot of Alex Johnson" 
-                        class="avatar"
-                        data-testid="test-user-avatar"
-                    >
-                    <figcaption class="sr-only">Profile picture of AKINTUNDE</figcaption>
-                </figure>
-                <h2 class="user-name" data-testid="test-user-name">Akintunde</h2>
-                <p class="user-title">Frontend Developer & Problem Solver</p>
-                <p class="user-quote">"I build things for the web and occasionally break them to learn how they work."</p>
-            </header>
+      <div class="profile-content">
+        <!-- Profile Header with Avatar and Personal Info -->
+        <header class="profile-header" aria-label="Developer profile header">
+          <figure class="avatar-container">
+            <img
+              src="./images/myyy.jpg"
+              alt="Professional headshot of Akintunde"
+              class="avatar"
+              data-testid="test-user-avatar"
+            />
+            <figcaption class="sr-only">
+              Profile picture of AKINTUNDE
+            </figcaption>
+          </figure>
+          <h2 class="user-name" data-testid="test-user-name">Akintunde</h2>
+          <p class="user-title">Frontend Developer & Problem Solver</p>
+          <p class="user-quote">
+            "I build things for the web and occasionally break them to learn how
+            they work."
+          </p>
+        </header>
 
-            <!-- Main Content Area -->
-            <main class="profile-main">
-                <!-- Bio Section -->
-                <section class="bio-section">
-                    <p class="bio" data-testid="test-user-bio">
-                        Hey there! I'm Akintunde, a frontend developer with 2 years of experience turning complex problems 
-                        into elegant solutions. I'm passionate about creating performant, accessible web applications 
-                        that make people's lives easier. When I'm not coding, you'll find me contributing to open source, 
-                        playing basketball, or experimenting with new frameworks and technologies.
-                    </p>
-                </section>
+        <!-- Main Content Area -->
+        <main class="profile-main">
+          <!-- Bio Section -->
+          <section class="bio-section">
+            <p class="bio" data-testid="test-user-bio">
+              Hey there! I'm Akintunde, a frontend developer with 2 years of
+              experience turning complex problems into elegant solutions. I'm
+              passionate about creating performant, accessible web applications
+              that make people's lives easier. When I'm not coding, you'll find
+              me contributing to open source, playing basketball, or
+              experimenting with new frameworks and technologies.
+            </p>
+          </section>
 
-                <!-- Current Time Display -->
-                <section class="time-section">
-                    <div class="time-label">Current timestamp (ms):</div>
-                    <div class="time-display" data-testid="test-user-time" id="time-display"></div>
-                </section>
+          <!-- Current Time Display -->
+          <section class="time-section">
+            <div class="time-label">Current timestamp (ms):</div>
+            <div
+              class="time-display"
+              data-testid="test-user-time"
+              id="time-display"
+            ></div>
+          </section>
 
-                <!-- Tech Stack -->
-                <section class="tech-stack">
-                    <div class="tech-label">
-                        <i class="fas fa-code"></i> Tech I work with
-                    </div>
-                    <div class="tech-tags">
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">PostgreSQL</span>
-                    </div>
-                </section>
+          <!-- Tech Stack -->
+          <section class="tech-stack">
+            <div class="tech-label">
+              <i class="fas fa-code"></i> Tech I work with
+            </div>
+            <div class="tech-tags">
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">PostgreSQL</span>
+            </div>
+          </section>
 
-                <!-- Social Links -->
-                <section class="social-links">
-                    <div class="social-label">
-                        <i class="fas fa-share-alt"></i> Let's connect
-                    </div>
-                    <nav aria-label="Social media links">
-                        <ul class="social-links-list" data-testid="test-user-social-links">
-                            <li>
-                                <a 
-                                    href="https://github.com/deittyy" 
-                                    class="social-link" 
-                                    target="_blank" 
-                                    rel="noopener noreferrer"
-                                    aria-label="Visit deittyy's GitHub profile"
-                                    data-testid="test-user-social-github"
-                                >
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a 
-                                    href="https://twitter.com/deittyy" 
-                                    class="social-link" 
-                                    target="_blank" 
-                                    rel="noopener noreferrer"
-                                    aria-label="Visit deittyy's Twitter profile"
-                                    data-testid="test-user-social-twitter"
-                                >
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a 
-                                    href="https://linkedin.com/in/dayo.osunkoya" 
-                                    class="social-link" 
-                                    target="_blank" 
-                                    rel="noopener noreferrer"
-                                    aria-label="Visit deittyy's LinkedIn profile"
-                                    data-testid="test-user-social-linkedin"
-                                >
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a 
-                                    href="https://deittyy.dev" 
-                                    class="social-link" 
-                                    target="_blank" 
-                                    rel="noopener noreferrer"
-                                    aria-label="Visit deittyy's personal website"
-                                    data-testid="test-user-social-website"
-                                >
-                                    <i class="fas fa-globe"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </section>
+          <!-- Social Links -->
+          <section class="social-links">
+            <div class="social-label">
+              <i class="fas fa-share-alt"></i> Let's connect
+            </div>
+            <nav aria-label="Social media links">
+              <ul
+                class="social-links-list"
+                data-testid="test-user-social-links"
+              >
+                <li>
+                  <a
+                    href="https://github.com/deittyy"
+                    class="social-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visit deittyy's GitHub profile"
+                    data-testid="test-user-social-github"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://twitter.com/deittyy"
+                    class="social-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visit deittyy's Twitter profile"
+                    data-testid="test-user-social-twitter"
+                  >
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://linkedin.com/in/dayo.osunkoya"
+                    class="social-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visit deittyy's LinkedIn profile"
+                    data-testid="test-user-social-linkedin"
+                  >
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://deittyy.dev"
+                    class="social-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visit deittyy's personal website"
+                    data-testid="test-user-social-website"
+                  >
+                    <i class="fas fa-globe"></i>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </section>
 
-                <!-- Hobbies and Dislikes -->
-                <section class="hobbies-dislikes">
-                    <div class="hobbies-section">
-                        <h3 class="section-title"><i class="fas fa-heart"></i> What I enjoy</h3>
-                        <ul class="list" data-testid="test-user-hobbies">
-                            <li class="list-item">Contributing to open source projects</li>
-                            <li class="list-item">Hiking and exploring nature trails</li>
-                            <li class="list-item">Building side projects with new tech</li>
-                            <li class="list-item">Reading tech blogs and documentation</li>
-                            <li class="list-item">Playing strategy board games</li>
-                        </ul>
-                    </div>
+          <!-- Hobbies and Dislikes -->
+          <section class="hobbies-dislikes">
+            <div class="hobbies-section">
+              <h3 class="section-title">
+                <i class="fas fa-heart"></i> What I enjoy
+              </h3>
+              <ul class="list" data-testid="test-user-hobbies">
+                <li class="list-item">Contributing to open source projects</li>
+                <li class="list-item">Hiking and exploring nature trails</li>
+                <li class="list-item">Building side projects with new tech</li>
+                <li class="list-item">Reading tech blogs and documentation</li>
+                <li class="list-item">Playing strategy board games</li>
+              </ul>
+            </div>
 
-                    <div class="dislikes-section">
-                        <h3 class="section-title"><i class="fas fa-thumbs-down"></i> Developer pet peeves</h3>
-                        <ul class="list" data-testid="test-user-dislikes">
-                            <li class="list-item">Poorly documented APIs</li>
-                            <li class="list-item">Inconsistent code formatting</li>
-                            <li class="list-item">Slow development environments</li>
-                            <li class="list-item">Meetings that could have been emails</li>
-                            <li class="list-item">Bugs in production on a Friday</li>
-                        </ul>
-                    </div>
-                </section>
+            <div class="dislikes-section">
+              <h3 class="section-title">
+                <i class="fas fa-thumbs-down"></i> Developer pet peeves
+              </h3>
+              <ul class="list" data-testid="test-user-dislikes">
+                <li class="list-item">Poorly documented APIs</li>
+                <li class="list-item">Inconsistent code formatting</li>
+                <li class="list-item">Slow development environments</li>
+                <li class="list-item">Meetings that could have been emails</li>
+                <li class="list-item">Bugs in production on a Friday</li>
+              </ul>
+            </div>
+          </section>
 
-                <!-- Developer Details -->
-                <section class="developer-details">
-                    <div class="detail-item">
-                        <div class="detail-icon">
-                            <i class="fas fa-laptop-code"></i>
-                        </div>
-                        <div class="detail-text">
-                            <span class="detail-label">Current Setup</span>
-                            <span class="detail-value">VS Code + Cursor + Chrome</span>
-                        </div>
-                    </div>
-                    <div class="detail-item">
-                        <div class="detail-icon">
-                            <i class="fas fa-coffee"></i>
-                        </div>
-                        <div class="detail-text">
-                            <span class="detail-label">Fuel Source</span>
-                            <span class="detail-value">Black coffee & McVities biscuits</span>
-                        </div>
-                    </div>
-                    <div class="detail-item">
-                        <div class="detail-icon">
-                            <i class="fas fa-music"></i>
-                        </div>
-                        <div class="detail-text">
-                            <span class="detail-label">Coding Soundtrack</span>
-                            <span class="detail-value">Judikay</span>
-                        </div>
-                    </div>
-                    <div class="detail-item">
-                        <div class="detail-icon">
-                            <i class="fas fa-terminal"></i>
-                        </div>
-                        <div class="detail-text">
-                            <span class="detail-label">Current Project</span>
-                            <span class="detail-value">Building a new Student Dashboard</span>
-                        </div>
-                    </div>
-                </section>
-            </main>
-        </div>
+          <!-- Developer Details -->
+          <section class="developer-details">
+            <div class="detail-item">
+              <div class="detail-icon">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <div class="detail-text">
+                <span class="detail-label">Current Setup</span>
+                <span class="detail-value">VS Code + Cursor + Chrome</span>
+              </div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-icon">
+                <i class="fas fa-coffee"></i>
+              </div>
+              <div class="detail-text">
+                <span class="detail-label">Fuel Source</span>
+                <span class="detail-value"
+                  >Black coffee & McVities biscuits</span
+                >
+              </div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-icon">
+                <i class="fas fa-music"></i>
+              </div>
+              <div class="detail-text">
+                <span class="detail-label">Coding Soundtrack</span>
+                <span class="detail-value">Judikay</span>
+              </div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-icon">
+                <i class="fas fa-terminal"></i>
+              </div>
+              <div class="detail-text">
+                <span class="detail-label">Current Project</span>
+                <span class="detail-value"
+                  >Building a new Student Dashboard</span
+                >
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
     </article>
 
     <!-- Screen reader only class -->
     <style>
-        .sr-only {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            white-space: nowrap;
-            border: 0;
-        }
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
     </style>
 
-    <script src="script.js">
-    </script>
-</body>
-</html> 
+    <script src="script.js"></script>
+  </body>
+</html>
